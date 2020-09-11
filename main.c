@@ -80,6 +80,4 @@ int getwebpage()
         printf("Successfully sent html fetch request");
         return(0);
     }
-    printf("test\n");
-
 }
