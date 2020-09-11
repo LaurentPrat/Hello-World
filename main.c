@@ -52,6 +52,7 @@ int getwebpage()
     if(tcpSocket < 0) 
     {
         printf("ERROR opening socket\n");
+        return(1);
     } else 
     {
         printf("Socket opened successfully.\n");
@@ -64,6 +65,7 @@ int getwebpage()
     if(connect(tcpSocket, (struct sockaddr *) &serverAddr, sizeof(serverAddr)) < 0) 
     {
         printf("Can't connect\n");
+        return(1);
     } else 
     {
         printf("Connected successfully\n");
